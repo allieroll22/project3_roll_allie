@@ -101,14 +101,13 @@ h1 {
   width: 64%;
 }
 
-/* ******** START Intro Page  ********** */
+/* ******** START Intro Animation  ********** */
 
 
 .action-wrapper h2 {
 	font-size: 2rem;
 	font-family: 'Amatic SC', cursive;
 }
-
 
 .cd-intro {
   position: relative;
@@ -142,11 +141,6 @@ h1 {
   display: table;
 }
 
-@media only screen and (min-width: 768px) {
-  .cd-intro-content h1 {
-    font-size: 4rem;
-  }
-}
 
 .cd-intro-content h1,
 .cd-intro-content h1 span {
@@ -213,15 +207,6 @@ h1 {
   -webkit-animation: cd-loading-mask 2s 1s both;
   -moz-animation: cd-loading-mask 2s 1s both;
   animation: cd-loading-mask 2s 1s both;
-}
-
-@media only screen and (min-width: 768px) {
-  .mask.cd-intro-content h1 {
-    padding-bottom: 20px;
-  }
-  .mask.cd-intro-content h1 span::before {
-    top: calc(100% + 18px);
-  }
 }
 
 .mask.cd-intro-content h1::after {
@@ -300,6 +285,8 @@ h1 {
 
 /* ************ END About Page  ********** */
 
+
+
 /* ************ START Timeline Page  ********** */
 
 .block-content {
@@ -315,12 +302,11 @@ h1 {
 .block-content h2 {
 	font-family: 'Amatic SC', cursive;
 	text-align:center;
-	margin:.4em 0 0 0;
+	margin:.2em 0 0 0;
 	font-size:2.5em;
 	line-height:1;
 	letter-spacing:0.02em;
 }
-
 
 .content img {
 	width: 100%;
@@ -590,12 +576,24 @@ h1 {
 	}
 }
 
-
 @media (min-width:700px) {
 
 	.action-wrapper h2 {
 		font-size: 3rem;
 	}
+}
+
+@media only screen and (min-width: 768px) {
+  .mask.cd-intro-content h1 {
+    padding-bottom: 20px;
+  }
+  .mask.cd-intro-content h1 span::before {
+    top: calc(100% + 18px);
+  }
+
+  .cd-intro-content h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width:800px) {
