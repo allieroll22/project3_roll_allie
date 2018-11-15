@@ -301,10 +301,6 @@ h1 {
 /* ************ END About Page  ********** */
 
 /* ************ START Timeline Page  ********** */
-.timeline {
-  font-size: 100%;
-  line-height: 1.6;
-}
 
 .block-content {
   min-height:100vh;
@@ -315,6 +311,7 @@ h1 {
 	-webkit-font-smoothing:antialiased;
 	margin:0 auto 1em auto;
 }
+
 .block-content h2 {
 	font-family: 'Amatic SC', cursive;
 	text-align:center;
@@ -323,12 +320,7 @@ h1 {
 	line-height:1;
 	letter-spacing:0.02em;
 }
-@media all and (min-width:40em) {
-	.block-content h2 {
-		font-size: 4.75em;
-	}
 
-}
 
 .content img {
 	width: 100%;
@@ -354,18 +346,6 @@ h1 {
   color:black;
 }
 
-@media all and (min-width:40em) {
-	.content h3 {
-		font-size: 2.5em;
-	}
-
-	.content img {
-		width: 49%;
-		display: inline-block;
-	}
-}
-
-
 .l-block-spacing {
 	min-height:80vh;
 	padding:2em 0 4em 0;
@@ -377,13 +357,6 @@ h1 {
 	margin-right:auto;
 	padding-left:1em;
 	padding-right:1em;
-}
-
-@media all and (min-width:40em) {
-	.l-contained {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
 }
 
 .timeline-list {
@@ -497,8 +470,6 @@ h1 {
   animation-delay:13s;
 }
 
-
-
 @keyframes revealFromLeft {
   0% {
     transform:translateX(-1em);
@@ -544,9 +515,6 @@ h1 {
   }
 }
 
-
-
-
 /* ************ END TIMELINE Page  ********** */
 
 
@@ -569,6 +537,27 @@ h1 {
 		max-width: 400px;
 	}
 }
+
+@media all and (min-width:640px) {
+	.block-content h2 {
+		font-size: 4.75em;
+	}
+
+	.l-contained {
+    padding-left: 2em;
+    padding-right: 2em;
+	}
+
+	.content h3 {
+		font-size: 2.5em;
+	}
+
+	.content img {
+		width: 49%;
+		display: inline-block;
+	}
+}
+
 
 @media (min-width:700px) {
 
