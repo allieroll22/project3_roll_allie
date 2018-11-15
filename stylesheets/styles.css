@@ -280,6 +280,16 @@ h1 {
 /* ****************** END Home Page ***************** */
 
 /* ************ START About Page  ********** */
+#aboutme {
+	display: inline-block;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+#aboutme p {
+	padding: 1em;
+	font-size: 1.4em;
+}
 
 #aboutme img {
 	max-width: 300px;
@@ -287,6 +297,8 @@ h1 {
 	margin-left: auto;
   margin-right: auto;
 }
+
+
 
 /* ************ END About Page  ********** */
 
@@ -301,6 +313,10 @@ h1 {
 
 	.action-wrapper h2 {
 		font-size: 3rem;
+	}
+
+	#aboutme img {
+		max-width: 400px;
 	}
 }
 
@@ -320,4 +336,21 @@ h1 {
 	.mask.cd-intro-content h1 {
 		font-size: 5rem;
 	}
+}
+
+@media (min-width:1000px) {
+	#aboutme {
+		display: flex;
+		flex-direction: row;
+	 }
+
+	 #aboutme p {
+		 padding: 0 0 0 1em;
+		 font-size: 1.41em;
+	 }
+
+	 #aboutme img {
+		max-width: 600px;
+		max-height: 580px;
+	 }
 }
