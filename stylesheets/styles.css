@@ -168,11 +168,7 @@ h1 {
   opacity: 1;
 }
 
-
-
-/* --------------------------------
-Mask
--------------------------------- */
+/* **********  Mask *************** */
 .mask.cd-intro-content h1 {
 	font-size: 3.3em;
   position: relative;
@@ -184,6 +180,7 @@ Mask
   color: transparent;
   overflow: hidden;
 }
+
 .mask.cd-intro-content h1::after {
   /* this is the animated text */
   content: attr(data-content);
@@ -205,6 +202,7 @@ Mask
   display: inline-block;
   opacity: 1;
 }
+
 .mask.cd-intro-content h1 span::before {
   /* this is the loading bar */
   content: '';
@@ -218,6 +216,7 @@ Mask
   -moz-animation: cd-loading-mask 2s 1s both;
   animation: cd-loading-mask 2s 1s both;
 }
+
 @media only screen and (min-width: 768px) {
   .mask.cd-intro-content h1 {
     padding-bottom: 20px;
@@ -226,7 +225,6 @@ Mask
     top: calc(100% + 18px);
   }
 }
-
 
 .mask.cd-intro-content h1::after,
 .mask.cd-intro-content p {
@@ -281,7 +279,36 @@ Mask
     transform: scaleX(1);
   }
 }
-/* ************ END Intro Page  ********** */
-
+/* ************ END Intro Animation ********** */
 
 /* ******** END Home Page ****** */
+
+
+/* *********** Media Queries ********** */
+	@media (min-width:600px) {
+	#logo img {
+		width: 64%;
+	}
+
+	.action-wrapper h2 {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width:700px) {
+
+	.action-wrapper h2 {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width:800px) {
+
+	#logo img {
+		width: 57%;
+	}
+
+	.mask.cd-intro-content h1 {
+		font-size: 5rem;
+	}
+}
