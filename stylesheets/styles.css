@@ -292,12 +292,6 @@ h1 {
 .block-content {
   min-height:100vh;
 }
-.block-content p {
-	font-size:1.1em;
-	line-height:1.5;
-	-webkit-font-smoothing:antialiased;
-	margin:0 auto 1em auto;
-}
 
 .block-content h2 {
 	font-family: 'Amatic SC', cursive;
@@ -306,6 +300,12 @@ h1 {
 	font-size:2.5em;
 	line-height:1;
 	letter-spacing:0.02em;
+}
+
+.block-content p {
+	font-size:1.1em;
+	line-height:1.5;
+	margin:0 auto 1em auto;
 }
 
 .content img {
@@ -324,17 +324,13 @@ h1 {
 .heading-group {
 	margin:0 0 2em 0;
 }
+
 .content h3 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 2.2em;
 	line-height: 1.2;
 	letter-spacing:0.02em;
   color:black;
-}
-
-.l-block-spacing {
-	min-height:80vh;
-	padding:2em 0 4em 0;
 }
 
 .l-contained {
@@ -366,6 +362,7 @@ h1 {
   -webkit-animation: scaleVertical 3s 1s ease both 1;
           animation: scaleVertical 3s 1s ease both 1;
 }
+
 .timeline-list:after {
   content: "";
   clear: both;
@@ -382,12 +379,6 @@ h1 {
           animation: revealScaleUp 0.75s 2.82s ease both 1;
 }
 
-.t-block-teal {
-	background: white;
-}
-.t-block-teal h2, .t-block-teal h3, .t-block-teal p  {
-	color: black;
-}
 
 .timeline-list li {
   margin: 0 0 3em 0;
@@ -533,11 +524,7 @@ h1 {
 	max-width: 100%;
 }
 
-
-
 /* ************ END PHOTO Page  ********** */
-
-
 
 
 
@@ -610,8 +597,6 @@ h1 {
 		max-width: 400px;
 		width: 50%;
 	}
-
-
 }
 
 @media (min-width:1000px) {
@@ -633,6 +618,7 @@ h1 {
 	 #flex-container figure {
 		max-width: 500px;
 	}
+
 	 #thentext {
 		padding: .7em 5em 0.7em 5em;
 	}
