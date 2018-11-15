@@ -8,6 +8,14 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   display:block;
 }
 
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-image: url("../images/bg.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+}
+
 /* ******************* START Nav Bar **************** */
 
 nav {
@@ -59,12 +67,19 @@ nav ul li {
 	line-height: 9em;
 }
 
-  .button-hover:before{
+.button-hover:before{
     content: attr(data-text);
     color: #DEEFF5;
     position: absolute;
     top: -2.75em;
-  }
+}
+/* ******************* END Nav Bar **************** */
 
 
-/*end hover nav */
+#container {
+	clear:both;
+	padding: 1.5em;
+	max-width: 1000px;
+	background-color: white;
+	margin: 0 auto;
+}
