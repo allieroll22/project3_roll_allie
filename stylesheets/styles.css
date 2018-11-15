@@ -7,3 +7,21 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
   display:block;
 }
+
+/* ******************* START Nav Bar **************** */
+
+nav {
+  padding: .9rem .5rem;
+	background-color: black;
+	text-align: center;
+}
+
+/* remove list bullets */
+nav ul {
+  list-style-type:none;
+}
+
+/* nav display horizontal */
+nav ul li {
+  display:inline;
+}
