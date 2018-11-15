@@ -85,7 +85,12 @@ nav ul li {
 }
 
 
-
+h1 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 5rem;
+	padding:0 0 1rem 0;
+}
 
 /* ************************ Home Page ************/
 #logo img{
@@ -150,9 +155,9 @@ nav ul li {
   -webkit-animation-duration: 0.8s;
   -moz-animation-duration: 0.8s;
   animation-duration: 0.8s;
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -209,9 +214,9 @@ Mask
   height: 5px;
   width: calc(100% + 2em);
   background-color: black;
-  -webkit-animation: cd-loading-mask 1s 1s both;
-  -moz-animation: cd-loading-mask 1s 1s both;
-  animation: cd-loading-mask 1s 1s both;
+  -webkit-animation: cd-loading-mask 2s 1s both;
+  -moz-animation: cd-loading-mask 2s 1s both;
+  animation: cd-loading-mask 2s 1s both;
 }
 @media only screen and (min-width: 768px) {
   .mask.cd-intro-content h1 {
