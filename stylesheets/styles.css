@@ -43,7 +43,7 @@ nav ul li {
   height: 3.5em;
   font: 300 1em/3.5em 'Roboto Condensed', sans-serif;
   text-decoration: none;
-	text-shadow: 0 1px 3px rgba(black, .35);
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
   letter-spacing: .08em;
   color: black;
   background: white;
@@ -59,7 +59,7 @@ nav ul li {
   [class*="button-"]:hover {
     background: black;
 		color: white;
-    box-shadow: 0 0 3px rgba(black, .5) inset;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
 }
 
 
@@ -351,6 +351,7 @@ h1 {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .timeline-list:before {
   content: "";
   border-left: 5px solid #CCC;
@@ -417,7 +418,6 @@ h1 {
   -webkit-animation: revealFromLeft 1s 0s ease both 1;
           animation: revealFromLeft 1s 0s ease both 1;
 }
-
 
 .timeline-list li:nth-child(1):before {
   animation-delay:2s;
