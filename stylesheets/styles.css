@@ -535,6 +535,19 @@ h1 {
 	padding: .7em 0 .7em 0;
 }
 
+#flex-container {
+	padding-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh; /*telling flexcontainer needs to take up 100% of viewer height*/
+	justify-content: center;
+}
+
+#flex-container img {
+	max-width: 100%;
+}
+
+
 
 /* ************ END PHOTO Page  ********** */
 
@@ -611,4 +624,8 @@ h1 {
 		max-width: 600px;
 		max-height: 580px;
 	 }
+
+	 #thentext {
+		padding: .7em 5em 0.7em 5em;
+	}
 }
