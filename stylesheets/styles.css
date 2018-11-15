@@ -607,6 +607,13 @@ h1 {
 	.mask.cd-intro-content h1 {
 		font-size: 5rem;
 	}
+
+	#flex-container figure {
+		max-width: 400px;
+		width: 50%;
+	}
+
+
 }
 
 @media (min-width:1000px) {
