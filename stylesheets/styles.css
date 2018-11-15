@@ -301,113 +301,163 @@ h1 {
 /* ************ END About Page  ********** */
 
 /* ************ START Timeline Page  ********** */
+.timeline {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+.block-content {
+  min-height:100vh;
+}
+.block-content p {
+	font-size:1.1em;
+	line-height:1.5;
+	-webkit-font-smoothing:antialiased;
+	margin:0 auto 1em auto;
+}
+.block-content h2 {
+	font-family: 'Amatic SC', cursive;
+	text-align:center;
+	margin:.4em 0 0 0;
+	font-size:2.5em;
+	line-height:1;
+	letter-spacing:0.02em;
+}
+@media all and (min-width:40em) {
+	.block-content h2 {
+		font-size: 4.75em;
+	}
+
+}
+
+.content img {
+	width: 100%;
+	display: inline-block;
+}
+
+.subtitle {
+	font-weight:300;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:1em;
+	margin:0.5em 0;
+}
+
+.heading-group {
+	margin:0 0 2em 0;
+}
+.content h3 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 2.2em;
+	line-height: 1.2;
+	letter-spacing:0.02em;
+  color:black;
+}
+
+@media all and (min-width:40em) {
+	.content h3 {
+		font-size: 2.5em;
+	}
+
+	.content img {
+		width: 49%;
+		display: inline-block;
+	}
+}
+
 
 .l-block-spacing {
-
-
 	min-height:80vh;
 	padding:2em 0 4em 0;
-
 }
 
 .l-contained {
-
 	max-width:1000px;
 	margin-left:auto;
 	margin-right:auto;
-
 	padding-left:1em;
 	padding-right:1em;
-
-	@media all and (min-width:40em) {
-
-		padding-left:2em;
-		padding-right:2em;
-
-
-	}
 }
+
+@media all and (min-width:40em) {
+	.l-contained {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
 .timeline-list {
-
-	//border-left: 5px solid #ccc;
-	padding-bottom: 1em;
-	position: relative;
-	max-width:700px;
-	margin:0 auto;
-
-  &:before {
-		content: "";
-     border-left: 5px solid #CCC;
-     left: -0.25em;
-     top: 2em;
-     height: 100%;
-     position: absolute;
-     bottom: 0;
-     top: 0;
-    transform-origin:0 0;
-    animation:scaleVertical 3s 1s ease both 1;
-	}
-
-	&:after {
-		content: "";
-    clear:both;
-
-		position: absolute;
-		bottom: 0px;
-		left: -1em;
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background: none repeat scroll 0% 0% #DDD;
-		border: 5px solid #DDD;
-		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    animation:revealScaleUp 0.75s 2.82s ease both 1;
-	}
+  padding-bottom: 1em;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.timeline-list:before {
+  content: "";
+  border-left: 5px solid #CCC;
+  left: -0.25em;
+  top: 2em;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: scaleVertical 3s 1s ease both 1;
+          animation: scaleVertical 3s 1s ease both 1;
+}
+.timeline-list:after {
+  content: "";
+  clear: both;
+  position: absolute;
+  bottom: 0px;
+  left: -1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: none repeat scroll 0% 0% #DDD;
+  border: 5px solid #DDD;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-animation: revealScaleUp 0.75s 2.82s ease both 1;
+          animation: revealScaleUp 0.75s 2.82s ease both 1;
 }
 
 .t-block-teal {
-	background:#02aa9d;
+	background: white;
 }
-.t-block-teal h2 {
-	color:#fff;
+.t-block-teal h2, .t-block-teal h3, .t-block-teal p  {
+	color: black;
 }
-.t-block-teal h3 {
-	color:#034944;
-}
-.t-block-teal p {
-	color:#034944;
-}
-//list animation
-//scale in the circle, follwoed by the list item
-//the border must also animate in.
+
 .timeline-list li {
-
-	margin:0 0 3em 0;
-	padding:0 2em 0em 2em;
-    position: relative;
-
+  margin: 0 0 3em 0;
+  padding: 0 2em 0em 2em;
+  position: relative;
 }
+
 .timeline-list li:before {
-
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: -1.45em;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: none repeat scroll 0% 0% #02aa9d;
-	border: 5px solid #fff;
-  animation:revealScaleUp 0.75s 0s ease both 1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1.45em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: none repeat scroll 0% 0% white;
+  border: 5px solid black;
+  -webkit-animation: revealScaleUp 2s 0s ease both 1;
+          animation: revealScaleUp 2s 0s ease both 1;
 }
+
 .timeline-list {
-
-   animation:reveal 2s 0 ease both 1;
+  -webkit-animation: reveal 2s 0 ease both 1;
+          animation: reveal 2s 0 ease both 1;
 }
+
 .timeline-list li .content {
-  animation:revealFromLeft 0.5s 0s ease both 1;
+  -webkit-animation: revealFromLeft 1s 0s ease both 1;
+          animation: revealFromLeft 1s 0s ease both 1;
 }
-
 
 
 
@@ -467,8 +517,6 @@ h1 {
     opacity:0;
     transform:scale(0.5);
   }
-
-
 
   50% {
      opacity:1;
