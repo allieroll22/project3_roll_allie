@@ -149,8 +149,7 @@ h1 {
 }
 
 .cd-intro-content h1,
-.cd-intro-content h1 span,
-.cd-intro-content .cd-btn {
+.cd-intro-content h1 span {
   opacity: 0;
   -webkit-animation-duration: 0.8s;
   -moz-animation-duration: 0.8s;
@@ -163,8 +162,7 @@ h1 {
   animation-fill-mode: forwards;
 }
 .no-cssanimations .cd-intro-content h1, .no-cssanimations
-.cd-intro-content h1 span, .no-cssanimations
-.cd-intro-content .cd-btn {
+.cd-intro-content h1 span {
   opacity: 1;
 }
 
@@ -226,8 +224,7 @@ h1 {
   }
 }
 
-.mask.cd-intro-content h1::after,
-.mask.cd-intro-content p {
+.mask.cd-intro-content h1::after {
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   animation-duration: 0.4s;
@@ -238,12 +235,11 @@ h1 {
 
 .mask.cd-intro-content .action-wrapper {
   overflow: hidden;
-}
-.mask.cd-intro-content .action-wrapper .cd-btn {
-  opacity: 1;
+	opacity: 1;
   margin: 0 0 0 1.5em;
 }
-.mask.cd-intro-content .action-wrapper .cd-btn:first-of-type {
+
+.mask.cd-intro-content .action-wrapper:first-of-type {
   margin-left: 0;
 }
 
