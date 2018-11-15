@@ -281,6 +281,13 @@ h1 {
 
 /* ************ START About Page  ********** */
 
+#aboutme img {
+	max-width: 300px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
 /* ************ END About Page  ********** */
 
 
