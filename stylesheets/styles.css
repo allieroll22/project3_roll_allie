@@ -16,64 +16,53 @@ body {
 
 }
 
-/* ******************* START Nav Bar **************** */
 
-nav {
-  padding: .9rem .5rem;
-	background-color: black;
-	text-align: center;
-}
-
-/* remove list bullets */
-nav ul {
-  list-style-type:none;
-}
-
-/* nav display horizontal */
-nav ul li {
-  display:inline;
-}
-/* Start hover effect nav */
-.button,
-[class*="button-"] {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  padding: 0 4%;
-  height: 3.5em;
-  font: 300 1em/3.5em 'Roboto Condensed', sans-serif;
-  text-decoration: none;
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-  letter-spacing: .08em;
-  color: black;
-  background: white;
-  border: solid 1px #fff;
-  border-radius: 2px;
-	-moz-transition: 0.35s ease all;
-	 -o-transition: 0.35s ease all;
-  -webkit-transition: 0.35s ease all;
-	transition: 0.35s ease all;
-}
-
-.button:hover,
-  [class*="button-"]:hover {
-    background: black;
-		color: white;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+.desktop-menu {
+	display: none;
 }
 
 
-.button-hover:hover {
-	line-height: 9em;
+/* ******* HAMBURGER MENU STYLES ******* */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  margin:0% 5% 0% 0%;
+  color:black;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  margin:0% 5% 0% 0%;
+  color:black;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/* ******* END HAMBURGER MENU STYLES ******* */
 
-.button-hover:before{
-    content: attr(data-text);
-    color: #DEEFF5;
-    position: absolute;
-    top: -2.75em;
-}
-/* ******************* END Nav Bar **************** */
 
 
 #container {
@@ -90,9 +79,31 @@ h1 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 5rem;
 	padding:0 0 1rem 0;
+	position: relative;
+}
+.h1-animate {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 5rem;
+	padding:0 0 1rem 0;
+  position: relative;
 }
 
-/* ************************ Home Page ************/
+.h1-animate .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.h1-animate .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+/* ************************ Home Page ************
 #logo img{
 	display: block;
   margin-left: auto;
@@ -262,6 +273,13 @@ h1 {
 }
 /* ************ END Intro Animation ********** */
 
+
+.gif img{
+	max-width: 600px;
+	width: 100%;
+	display: flex;
+}
+
 /* ****************** END Home Page ***************** */
 
 /* ************ START About Page  ********** */
@@ -282,6 +300,88 @@ h1 {
 	margin-left: auto;
   margin-right: auto;
 }
+
+
+
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: opacity .1s;
+  transition-delay: 3s;
+}
+.preloader.is-loaded {
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+}
+
+.pl-line {
+  position: absolute;
+  width: 1px;
+  height: 150%;
+  background: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+  transition: opacity 1s ease-out;
+}
+.is-loaded .pl-line {
+  opacity: 0;
+}
+.pl-line > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  animation: pulse 2s infinite;
+  will-change: transform;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.pl-l, .pl-r {
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  will-change: transform;
+  background: black;
+}
+
+.pl-l {
+  left: -20%;
+  transform: skew(-20deg);
+}
+.is-loaded .pl-l {
+  transform: translateX(-100%) skew(-20deg);
+}
+
+.pl-r {
+  right: -20%;
+  transform: skew(-20deg);
+}
+.is-loaded .pl-r {
+  transform: translateX(100%) skew(-20deg);
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
 
 /* ************ END About Page  ********** */
 
@@ -530,9 +630,10 @@ h1 {
 
 /* *********** Media Queries ********** */
 	@media (min-width:600px) {
+		/*
 	#logo img {
 		width: 60%;
-	}
+	}*/
 
 	.action-wrapper h2 {
 		font-size: 3rem;
@@ -541,6 +642,7 @@ h1 {
 	#aboutme img {
 		max-width: 400px;
 	}
+
 }
 
 @media all and (min-width:640px) {
@@ -561,6 +663,77 @@ h1 {
 		width: 49%;
 		display: inline-block;
 	}
+
+
+
+	/*hamburger menu */
+		.menu, .hamburger, .cross{
+			display: none;
+	}
+
+	.desktop-menu{
+			display: block;
+	}
+
+		/* ******************* START Nav Bar **************** */
+
+		nav {
+		  padding: .9rem .5rem;
+			background-color: black;
+			text-align: center;
+		}
+
+		/* remove list bullets */
+		nav ul {
+		  list-style-type:none;
+		}
+
+		/* nav display horizontal */
+		nav ul li {
+		  display:inline;
+		}
+		/* Start hover effect nav */
+		.button,
+		[class*="button-"] {
+		  position: relative;
+		  display: inline-block;
+		  overflow: hidden;
+		  padding: 0 4%;
+		  height: 3.5em;
+		  font: 300 1em/3.5em 'Roboto Condensed', sans-serif;
+		  text-decoration: none;
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+		  letter-spacing: .08em;
+		  color: black;
+		  background: white;
+		  border: solid 1px #fff;
+		  border-radius: 2px;
+			-moz-transition: 0.35s ease all;
+			 -o-transition: 0.35s ease all;
+		  -webkit-transition: 0.35s ease all;
+			transition: 0.35s ease all;
+		}
+
+		.button:hover,
+		  [class*="button-"]:hover {
+		    background: black;
+				color: white;
+		    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset;
+		}
+
+
+		.button-hover:hover {
+			line-height: 9em;
+		}
+
+		.button-hover:before{
+		    content: attr(data-text);
+		    color: #DEEFF5;
+		    position: absolute;
+		    top: -2.75em;
+		}
+		/* ******************* END Nav Bar **************** */
+
 }
 
 @media (min-width:700px) {
@@ -584,10 +757,10 @@ h1 {
 }
 
 @media (min-width:800px) {
-
+/*
 	#logo img {
 		width: 57%;
-	}
+	} */
 
 	.mask.cd-intro-content h1 {
 		font-size: 5rem;

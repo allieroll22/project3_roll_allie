@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8">
 
-		<title>Project 3</title>
+		<title>Project 4</title>
 
 		<link type="text/css" rel="stylesheet" href="stylesheets/styles.css" />
 
@@ -13,25 +13,48 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv-printshiv.min.js"></script>
-		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
 
 	</head>
 	<body>
-		<header>
-				<nav>
-					<ul>
-						<li><a href="index.html" data-text="Home" class="button-hover">Home</a></li>
-						<li><a href="about.html" data-text="About Me" class="button-hover">About Me</a></li>
-						<li><a href="timeline.html" data-text="Timeline" class="button-hover">Timeline</a></li>
-						<li><a href="photos.html" data-text="Photos" class="button-hover">Photos</a></li>
-					</ul>
-				</nav>
 
-		</header>
+				<button class="hamburger">&#9776;</button>
+		   	<button class="cross">&#735;</button>
+
+				<header class="header" role="banner">
+					<nav class="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="timeline.html">Timeline</a></li>
+							<li><a href="photos.html">Photos</a></li>
+						</ul>
+					</nav>
+
+
+				<div class="desktop-header">
+
+						<nav class="desktop-menu" role="navigation">
+							<ul>
+								<li><a href="index.html" data-text="Home" class="button-hover">Home</a></li>
+								<li><a href="about.html" data-text="About Me" class="button-hover">About Me</a></li>
+								<li><a href="timeline.html" data-text="Timeline" class="button-hover">Timeline</a></li>
+								<li><a href="photos.html" data-text="Photos" class="button-hover">Photos</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				</header>
 
 		<main id="container">
+
+
+
 
 			<!-- Mask Intro Animation Effect -->
 			<section class="cd-intro">
@@ -41,10 +64,17 @@
 
 					<div class="action-wrapper">
 							<div id= "logo">
-								<img src="images/jack_logo.png" alt="Jack" title="Jack">
-							</div>
 
-								<h2> A Lover of all People, Places and Things. </h2>
+								<div class="gif">
+								  <div class="gif__item" data-gif-trigger>
+								    <figure>
+								      <img src="images/jackgif.png" data-gif-image="images/jack.gif" data-image="images/jackgif.png">
+								    </figure>
+								  </div>
+								</div>
+
+						</div>
+								<h2> A Lover of all People, <br>Places and Things. </h2>
 					</div>
 				</div>
 
@@ -52,6 +82,12 @@
 
 		</main>
 
+
+
+		<script src="js/hamburger.js"></script>
+
+
+				<script src="js/gif.js"></script>
 	</body>
 
 </html>

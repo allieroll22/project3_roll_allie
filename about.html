@@ -5,13 +5,17 @@
 
 		<meta charset="utf-8">
 
-		<title>Project 3</title>
+		<title>Project 4</title>
 
 		<link type="text/css" rel="stylesheet" href="stylesheets/styles.css" />
 
 			<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700%7CRoboto+Condensed" rel="stylesheet">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
@@ -20,8 +24,23 @@
 	</head>
 
 	<body>
-		<header>
-				<nav>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
+		<header class="header" role="banner">
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="timeline.html">Timeline</a></li>
+					<li><a href="photos.html">Photos</a></li>
+				</ul>
+			</nav>
+
+
+		<div class="desktop-header">
+
+				<nav class="desktop-menu" role="navigation">
 					<ul>
 						<li><a href="index.html" data-text="Home" class="button-hover">Home</a></li>
 						<li><a href="about.html" data-text="About Me" class="button-hover">About Me</a></li>
@@ -30,10 +49,28 @@
 					</ul>
 				</nav>
 
+		</div>
+
 		</header>
 
 		<main id="container">
-		<h1> About me! </h1>
+
+
+			<div class="preloader">
+			  <div class="pl-l"></div>
+			  <div class="pl-r"></div>
+			  <div class="pl-line">
+			    <div></div>
+			  </div>
+			</div>
+
+
+			<h1 class="h1-animate">
+			  <span class="text-wrapper">
+			    <span class="letters">About Me!</span>
+			  </span>
+			</h1>
+
 
 		<div id="aboutme">
 			<img src="images/jackaboutphoto.jpg" title="Jack" alt="jack"/>
@@ -49,5 +86,9 @@
 		</main>
 
 	</body>
+	<script src="js/hamburger.js"></script>
 
+
+
+	<script src="js/main.js"></script>
 </html>
